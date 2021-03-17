@@ -1,7 +1,7 @@
 import random
 import time
 import sys
-import multiprocess
+import multiprocessing
 from matplotlib import pyplot as pp
 
 
@@ -23,7 +23,7 @@ def test_all(pool):
 
 
 if __name__ == '__main__':
-    pool = multiprocess.Pool()
+    pool = multiprocessing.Pool()
     t0 = time.time()
     print(test_all(pool))
     print("Time spent:", time.time() - t0)
